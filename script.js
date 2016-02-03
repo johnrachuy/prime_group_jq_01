@@ -25,6 +25,11 @@ $(document).ready(function() {
 	$('.banana').append('<button class="banana-button">Buy Banana</button>');
 	$('.grape').append('<button class="grape-button">Buy Grape</button>');
 
+	$('.apple').append('<img src="http://weknowyourdreamz.com/images/apple/apple-01.jpg" height="200" width="200" />');
+	$('.orange').append('<img src="http://images6.fanpop.com/image/photos/34500000/Orange-Fruit-orange-34512935-600-600.png" height="200" width="200" />');
+	$('.banana').append('<img src="http://www.granini.com/data/images/fruit_images/full/banana.png" height="200" width="200" />');
+	$('.grape').append('<img src="http://www.jennagardens.com/wp-content/uploads/2014/11/superior-full-bunch-additional-image.jpg" height="200" width="200" />');
+
 	var $apple = $('.apple').children().last();
 	var $orange = $('.orange').children().last();
 	var $banana = $('.banana').children().last();
