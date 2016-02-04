@@ -4,7 +4,6 @@ var orangeCounter = 0;
 var bananaCounter = 0;
 var grapeCounter = 0;
 
-
 function Fruit (name, price) {
 	this.name = name;
 	this.price = price;
@@ -50,8 +49,6 @@ function setPrice() {
 	}
 	$('.grape').children().first().remove();
 	$('.grape').prepend('<p>The price of grapes today is $' + (grape.price / 100) + '</p>');
-
-	console.log(apple.price);
 }
 
 var apple = new Fruit('apple', randomNumber(50, 999));
@@ -100,7 +97,6 @@ $(document).ready(function() {
 	$('.orange').append('<p>You have purchased ' + orangeCounter + ' orange(s) today!</p>');
 	$('.banana').append('<p>You have purchased ' + bananaCounter + ' banana(s) today!</p>');
 	$('.grape').append('<p>You have purchased ' + grapeCounter + ' bunch(es) of grapes today!</p>');
-
 
 	$('.apple-button').on('click', function() {
 		if (totalCash < apple.price / 100) {
@@ -155,7 +151,5 @@ $(document).ready(function() {
 			$('body').prepend('<div class="cash">Total Cash: $' + Number(Math.round(totalCash + 'e2' ) + 'e-2') + '</div>');
 		}
 	});
-
-
 });
 
